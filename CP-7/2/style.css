@@ -1,0 +1,20 @@
+.btn-primary {
+  background-color: #3498db;
+  border: 2px solid rgb(29.2970711297, 110.6778242678, 165.2029288703);
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  border: 2px solid rgb(108.8538461538, 128.4230769231, 129.6461538462);
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  border: 2px solid rgb(190.9931506849, 39.1780821918, 23.5068493151);
+  color: white;
+  padding: 10px 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+@use 'sass:color';
+
+// 1. Variables y Mapa de Configuración
+$base-color: #3498db;
+$base-font-size: 1rem;
+
+// 2. Función para calcular el tamaño (Lógica funcional)
+@function calcular-escala($iteracion) {
+    @return $base-font-size *+($iteracion * 0.2rem)();
+}
+
+// 3. Actividad: Bucle para generar clases automáticas
+@for $i from 1 through 4 {
+    .btn-nivel-#{$i} {
+        $color: $base-color;
+        background-color: color.adjust($color, $lightness: -40%);
+        font-size: calcular-escala($i);
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        color: white;
+
+        // Condicional para destacar el nivel máximo
+        @if $i ==4 {
+            border: 2px solid gold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+$base-size: 3rem;
+@for $i from 1 through 6 {
+  .text-#{$i} {
+    font-size: calc($base-size / $i);
+    margin-bottom: 10px;
+  }
+}

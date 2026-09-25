@@ -1,0 +1,27 @@
+.col-1 {
+  width: 25%;
+  float: left;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.col-3 {
+  width: 75%;
+  float: left;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.col-4 {
+  width: 100%;
+  float: left;
+  background: #eee;
+  border: 1px solid #ccc;
+}/*# sourceMappingURL=style.css.map */

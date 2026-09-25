@@ -1,0 +1,14 @@
+.list li {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@for $i from 1 through 3 {
+  .list li:nth-child(#{$i}) {
+    animation-delay: $i * 0.3s;
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}

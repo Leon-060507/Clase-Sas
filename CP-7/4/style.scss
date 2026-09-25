@@ -1,0 +1,14 @@
+@use "sass:color";
+@function contrast-color($color) {
+  @if (color.channel($color, "lightness", $space: hsl) > 50%) { @return #000; }
+  @else { @return #fff; }
+}
+
+@mixin make-card($bg) {
+  background-color: $bg;
+  color: contrast-color($bg);
+  padding: 20px;
+}
+
+.card-dark { @include make-card(#2c3e50); }
+.card-light { @include make-card(#ecf0f1); }

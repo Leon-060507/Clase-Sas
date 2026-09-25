@@ -1,0 +1,11 @@
+@use "sass:color";
+$theme-colors: ("primary": #3498db, "secondary": #95a5a6, "danger": #e74c3c);
+
+@each $name, $hex in $theme-colors {
+  .btn-#{$name} {
+    background-color: $hex;
+    border: 2px solid color.adjust($hex, $lightness: -15%);
+    color: white;
+    padding: 10px 20px;
+  }
+}
